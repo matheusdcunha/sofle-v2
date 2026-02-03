@@ -1,4 +1,4 @@
-# Keymap Config
+# Sofle V2
 
 This is the repository containing my [QMK Firmware](https://github.com/qmk/qmk_firmware/) configurations for the [Sofle V2 Keyboard](https://josefadamcik.github.io/SofleKeyboard/).
 

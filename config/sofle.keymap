@@ -16,14 +16,7 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         shifttocaps: shifttocaps {
@@ -89,6 +82,8 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
                 <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+
+            label = "special";
         };
 
         movement_layer {
@@ -110,6 +105,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            label = "movement";
         };
 
         number_layer {
@@ -120,6 +116,8 @@
 &trans  &trans  &kp F11  &kp F12  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
                 &trans   &trans   &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "number";
         };
     };
 };
